@@ -44,7 +44,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Futura', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .left {
@@ -52,7 +52,7 @@ body {
   top: 50%;
   transform: translateY(-50%) rotate(-90deg);
   font-family: 'Futura PT', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .right {
@@ -60,7 +60,7 @@ body {
   top: 50%;
   transform: translateY(-50%) rotate(90deg);
   font-family: 'NEW YORK', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .bottom {
@@ -68,5 +68,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Abril Fatface', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
+  font-weight:lighter;
 }

@@ -1,3 +1,3 @@
-function showMessage(text) {
-  alert("You clicked on: " + text);
+function redirectTo (page) {
+  window.location.href = page;
 }
