@@ -43,8 +43,7 @@ body {
   top: -40px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
+  font-family: 'Futura', sans-serif;
   font-size: 30px;
 }
 
@@ -52,8 +51,7 @@ body {
   left: -100px;
   top: 50%;
   transform: translateY(-50%) rotate(-90deg);
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
+  font-family: 'Futura PT', sans-serif;
   font-size: 30px;
 }
 
@@ -61,8 +59,7 @@ body {
   right: -85px;
   top: 50%;
   transform: translateY(-50%) rotate(90deg);
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
+  font-family: 'NEW YORK', sans-serif;
   font-size: 30px;
 }
 
@@ -70,7 +67,6 @@ body {
   bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
+  font-family: 'Abril Fatface', sans-serif;
   font-size: 30px;
 }
