@@ -30,7 +30,7 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 0px; /* Removes spacing between images */
-  padding: 0;
+  padding: 3px;
   max-width: 1200px;
   margin: auto;
 }
