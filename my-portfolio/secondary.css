@@ -10,9 +10,10 @@ body {
 header {
   width: 100%;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 15px;
   font-size: 20px;
   position: relative;
+  color: #111111;
 }
 
 /* Back Button */
@@ -22,7 +23,7 @@ header {
   top: 20px;
   text-decoration: none;
   font-size: 18px;
-  color: black;
+  color: #111111;
 }
 
 /* Portfolio Grid */
@@ -30,7 +31,7 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 0px; /* Removes spacing between images */
-  padding: 3px;
+  padding: 10px;
   max-width: 1200px;
   margin: auto;
 }
@@ -47,7 +48,7 @@ header {
 .portfolio-item img {
   width: 100%;
   height: auto;
-  max-height: 300px; /* Ensures vertical images don’t get too large */
+  max-height: 400px; /* Ensures vertical images don’t get too large */
   object-fit: cover; /* Makes sure images fill the grid cells */
   transition: transform 0.1s ease-in-out;
 }
