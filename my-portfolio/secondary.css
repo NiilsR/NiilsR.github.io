@@ -41,39 +41,36 @@ header {
   color: #111111;
 }
 
-/* Tagasi nupp */
-.button-2 {
-  background-color: rgba(51, 51, 51, 0.05);
-  border-radius: 8px;
-  border-width: 0;
-  color: #333333;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 10px 12px;
-  text-align: center;
-  transition: all 200ms;
-  vertical-align: baseline;
-  white-space: nowrap;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-/* Portfolio osa */
+/* Portfolio Grid */
 .portfolio {
-  display: flex;
-  gap: 0px; /* Võtab ära vahed piltidelt kui peaks olema üldse pildid */
-  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0px; /* Removes spacing between images */
+  padding: 0;
   max-width: 1200px;
   margin: auto;
-  flex-grow: 1;
-  flex-wrap: wrap;
+}
+
+/* Portfolio Items */
+.portfolio-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.1s ease-in-out;
+}
+
+/* Image Styling */
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  max-height: 300px; /* Ensures vertical images don’t get too large */
+  object-fit: cover; /* Makes sure images fill the grid cells */
+  transition: transform 0.1s ease-in-out;
+}
+
+/* Hover Effect */
+.portfolio-item:hover {
+  transform: scale(1.05);
 }
 
 /* Contact Section - Peaks nüüd jääma alla (Sticky) */
@@ -81,7 +78,6 @@ header {
   background-color: #f2f2f2;
   padding: 20px;
   text-align: center;
-  border-top: 2px solid #ccc;
   position: relative;
   width: 100%;
   bottom: 0;
