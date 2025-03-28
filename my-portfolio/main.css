@@ -7,7 +7,32 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   overflow: hidden;
+}
 
+/* Tutvustus tekst */
+.intro-text {
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  font-family: 'Futura PT', sans-serif;
+  color: #111111;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: auto;
+  white-space: nowrap;
+}
+
+.intro-text h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 18;
+  font-weight: 300;
 }
 
 .container {
@@ -15,9 +40,9 @@ body {
   text-align: center;
 }
 
-/* Logo Image */
+/* Logo pilt */
 .logo img {
-  width: 180px; /* Adjust size as needed */
+  width: 180px; /* Saab muuta suurust kui peaks vaja olema */
   transition: transform 0.5s ease-in-out;
 }
 
@@ -25,7 +50,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Clickable Text */
+/* Saab vajutada nendele */
 .clickable {
   position: absolute;
   font-size: 18px;
@@ -35,7 +60,7 @@ body {
 }
 
 .clickable:hover {
-  color: #007BFF; /* Highlight color */
+  color: gray; /* Highlight värv */
 }
 
 /* Positioning */

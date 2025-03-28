@@ -4,6 +4,15 @@ body {
   background-color: #f2f2f2;
   margin: 0;
   text-align: center;
+  flex-direction: column;
+  min-height: 100vh; /* Peaks kõik olema nüüd full vaatega */
+  overflow-x: hidden; /* Enam ei tohiks olla seda et mingi horizontal scrolling on? */
+}
+
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 /* Header */
@@ -14,9 +23,14 @@ header {
   font-size: 20px;
   position: relative;
   color: #111111;
+  font-family: 'Futura PT', sans-serif;
 }
 
-/* Back Button */
+.h3-text {
+  font-family: 'Futura PT', sans-serif;
+}
+
+/* Tagasi nupp */
 .back-button {
   position: absolute;
   left: 20px;
@@ -26,34 +40,50 @@ header {
   color: #111111;
 }
 
-/* Portfolio Grid */
+/* Portfolio osa */
 .portfolio {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 0px; /* Removes spacing between images */
-  padding: 10px;
+  display: flex;
+  gap: 0px; /* Võtab ära vahed piltidelt kui peaks olema üldse pildid */
+  padding: 20px;
   max-width: 1200px;
   margin: auto;
+  flex-grow: 1;
+  flex-wrap: wrap;
 }
 
-/* Portfolio Items */
-.portfolio-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.1s ease-in-out;
-}
-
-/* Image Styling */
-.portfolio-item img {
+/* Contact Section - Peaks nüüd jääma alla (Sticky) */
+.contact {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #ccc;
+  position: relative;
   width: 100%;
-  height: auto;
-  max-height: 400px; /* Ensures vertical images don’t get too large */
-  object-fit: cover; /* Makes sure images fill the grid cells */
-  transition: transform 0.1s ease-in-out;
+  bottom: 0;
+  margin-top: auto;
 }
 
-/* Hover Effect */
-.portfolio-item:hover {
-  transform: scale(1.05);
+/* Contact Text */
+.contact h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'Futura PT', sans-serif;
+}
+
+.contact p {
+  font-size: 18px;
+  margin: 5px 0;
+  font-family: 'Futura PT', sans-serif;
+}
+
+/* Contact Links */
+.contact a {
+  text-decoration: none;
+  color: #111111;
+  font-weight: bold;
+  font-family: 'Futura PT', sans-serif;
+}
+
+.contact a:hover {
+  color: gray;
 }
