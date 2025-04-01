@@ -1,0 +1,132 @@
+body {
+    font-family: Georgia, serif; /* Määrab veebilehe põhifondi */
+    margin: 0; /* Eemaldab vaikimisi marginaalid */
+    padding: 0; /* Eemaldab vaikimisi padja */
+    background-color: #f2f2f2; /* Seab taustavärvi helehalliks */
+    color: #333; /* Määrab teksti värvi tumehalliks */
+}
+
+* {
+    font-family: Georgia, serif; /* Nüüd on tervel lehel font õige */
+}
+
+
+/* Navbar liigub koos lehega */
+header {
+    position: fixed; /* Muudab navbari fikseerituks, nii et see jääb ekraani ülaossa ka kerides */
+    top: 0; /* Seab navbari täpselt ekraani ülaserva */
+    left: 0; /* Joondab navbari vasakule poole */
+    width: 100%; /* Tagab, et navbar ulatub üle kogu ekraani laiuse */
+    display: flex; /* Kasutab flexboxi, et elemendid oleksid hästi paigutatud */
+    justify-content: space-between; /* Jagab sisu nii, et vasak ja parem pool on kaugel üksteisest */
+    align-items: center; /* Joondab elemendid vertikaalselt keskele */
+    padding: 15px 30px; /* Lisab sisu ümber ruumi */
+    background-color: #333; /* värv */
+    color: #f2f2f2; /* Määrab teksti valgeks */
+    z-index: 1000; /* Tagab, et navbar jääb alati teiste elementide kohale */
+}
+
+#about {
+    text-align: left; /* Joondab teksti vasakule */
+    font-size: 22px; /* fonti */
+    max-width: 800px; /* Seab laiuse, et tekst ei veniks üle ekraani */
+    margin: 50px auto 50px 50px; /* Liigutab vasakule, lisades vasakpoolse ääre */
+    color: #333; /* värv */
+}
+
+#about h2 {
+    font-size: 80px; /* fonti suurus */
+    color: #333; /* värv */
+    margin-bottom: 40px; /* Pealkirja ja alloleva teksti vahe */
+    display: inline-block;
+}
+
+#about h2::after {
+    content: ""; /* Loob tühja elemendi */
+    display: block; /* Muudab selle nähtavaks */
+    width: 600px; /* Määrab joone pikkuse */
+    height: 2px; /* Määrab joone paksuse (muuda väiksemaks, kui soovid peenemat joont) */
+    background-color: #333; /* Määrab joone värvi */
+    margin: 0 auto 0; /* Lisab väikese vahe ja tsentreerib */
+}
+
+.logo img {
+    width: 50px; /* Määrab logo laiuseks 50 pikslit */
+}
+
+/* Lisasin padding, et midagi ei saaks minna navbari taha peitu */
+body {
+    padding-top: 60px; /* Lisab sisu ülemisele osale ruumi, et navbar ei kataks seda */
+}
+
+nav ul {
+    list-style: none; /* Eemaldab punktid või numbrid menüü loendi elementidelt */
+    padding: 0; /* Eemaldab vaikimisi padja */
+    margin: 0; /* Eemaldab vaikimisi marginaalid */
+    display: flex; /* Kasutab flexboxi, et menüüribad asetseksid üksteise kõrval */
+}
+
+nav ul li {
+    margin: 0 15px; /* Lisab horisontaalse vahe menüüpunktide vahele */
+}
+
+nav ul li a {
+    color: #f2f2f2; /* värv */
+    text-decoration: none; /* Eemaldab allajoonimise lingilt */
+}
+
+/* Üldine sisu sektsioonide stiil */
+section {
+    padding: 50px 20px; /* Lisab sektsioonidele ruumi nii ülevalt-alt kui külgedelt */
+    max-width: 800px; /* Seab maksimaalse laiuse 800 pikslile */
+    margin: auto; /* Keskendab sektsioonid ekraanil */
+    text-align: center; /* Joondab teksti keskele */
+}
+
+/* Projektide paigutus */
+.project-grid {
+    display: grid; /* Kasutab grid-layout’i projektide paigutamiseks */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Kohandab veerge vastavalt ekraani suurusele */
+    gap: 20px; /* Lisab vahe elementide vahele */
+}
+
+.project {
+    background-color: #f2f2f2; /* taustavärv */
+    padding: 20px; /* Lisab sisu ümber ruumi */
+    border-radius: 8px; /* Ümarad servad */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Lisab kerge varju efekti */
+}
+
+/* Kontaktivormi stiil */
+form {
+    display: flex; /* Muudab vormi elemendid paindlikuks */
+    flex-direction: column; /* Seab elemendid üksteise alla */
+}
+
+input, textarea {
+    margin: 10px 0; /* Lisab vahevormi väljade vahel */
+    padding: 10px; /* Lisab ruumi sisendi sees */
+    border: 1px solid #ccc; /* Lisab halli piiri */
+    border-radius: 5px; /* Ümarad servad */
+}
+
+button {
+    padding: 10px; /* Lisab nuppudele ruumi */
+    background-color: #333; /* Seab nupu tumedaks */
+    color: #f2f2f2; /* Määrab nupu teksti valgeks */
+    border: none; /* Eemaldab vaikepiiri */
+    cursor: pointer; /* Muudab kursorit, et näidata, et see on klõpsatav */
+}
+
+/* Peidetud elemendid */
+.hidden {
+    display: none; /* Peidab elemendid, kuni need muutuvad nähtavaks */
+}
+
+/* Jaluse stiil */
+footer {
+    text-align: center; /* Joondab teksti keskele */
+    padding: 20px; /* Lisab ruumi */
+    background-color: #333; /* taustavärv */
+    color: #f2f2f2; /* värv */
+}
