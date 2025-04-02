@@ -4,6 +4,7 @@ body {
     padding: 0; /* Eemaldab vaikimisi padja */
     background-color: #f2f2f2; /* Seab taustavärvi helehalliks */
     color: #333; /* Määrab teksti värvi tumehalliks */
+    width: 100%;
 }
 
 * {
@@ -32,6 +33,7 @@ header {
     max-width: 800px; /* Seab laiuse, et tekst ei veniks üle ekraani */
     margin: 50px auto 50px 50px; /* Liigutab vasakule, lisades vasakpoolse ääre */
     color: #333; /* värv */
+    width: 100%;
 }
 
 #about h2 {
@@ -97,25 +99,44 @@ section {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Lisab kerge varju efekti */
 }
 
-/* Kontaktivormi stiil */
-form {
-    display: flex; /* Muudab vormi elemendid paindlikuks */
-    flex-direction: column; /* Seab elemendid üksteise alla */
+.project-section {
+    transform: translateY(50px);
+    transform: all 0.6s ease-in-out;
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
 }
 
-input, textarea {
-    margin: 10px 0; /* Lisab vahevormi väljade vahel */
-    padding: 10px; /* Lisab ruumi sisendi sees */
-    border: 1px solid #ccc; /* Lisab halli piiri */
-    border-radius: 5px; /* Ümarad servad */
+/* Pealkirjad suuremaks */
+.project-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    position: relative;
 }
 
-button {
-    padding: 10px; /* Lisab nuppudele ruumi */
-    background-color: #333; /* Seab nupu tumedaks */
-    color: #f2f2f2; /* Määrab nupu teksti valgeks */
-    border: none; /* Eemaldab vaikepiiri */
-    cursor: pointer; /* Muudab kursorit, et näidata, et see on klõpsatav */
+/* Lisab joone pealkirja alla */
+.project-section h2 ::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #333;
+    margin-top: 10px;
+}
+
+/* YouTube videote konteiner */
+.video-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 8px; /* Ümarad servad */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0,2);
 }
 
 /* Peidetud elemendid */
@@ -129,4 +150,53 @@ footer {
     padding: 20px; /* Lisab ruumi */
     background-color: #333; /* taustavärv */
     color: #f2f2f2; /* värv */
+}
+
+/* Väiksemate ekraanide jaoks (nt telefonid alla 768px laiusega) */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Paneb logo ja menüü üksteise alla */
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Muudab menüü vertikaalseks */
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Suurem vahe menüüpunktide vahel */
+    }
+
+    #about {
+        max-width: 90%; /* Kitsendab About Us osa */
+        margin: 30px auto; /* Keskendab teksti */
+        text-align: center; /* Joondab keskele */
+    }
+
+    #about h2 {
+        font-size: 36px; /* Vähendab pealkirja suurust */
+    }
+
+    #about h2::after {
+        width: 60%; /* Teeb joone lühemaks väiksematel ekraanidel */
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr; /* Paneb projektid ühte veergu */
+    }
+
+    button {
+        width: 100%; /* Teeb nupud täislaiuseks */
+    }
+
+    form {
+        width: 100%; /* Vorm kohandub ekraaniga */
+    }
+
+    input, textarea {
+        width: 100%; /* Sisestusväljad kohanduvad ekraaniga */
+    }
 }
