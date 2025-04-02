@@ -21,7 +21,7 @@ header {
     justify-content: space-between; /* Jagab sisu nii, et vasak ja parem pool on kaugel üksteisest */
     align-items: center; /* Joondab elemendid vertikaalselt keskele */
     padding: 15px 30px; /* Lisab sisu ümber ruumi */
-    background-color: rgba(51, 51, 51, 0.99); /* värv */
+    background-color: rgb(51, 51, 51, 0.99); /* värv */
     color: #f2f2f2; /* Määrab teksti valgeks */
     z-index: 1000; /* Tagab, et navbar jääb alati teiste elementide kohale */
 }
@@ -51,7 +51,7 @@ header {
 }
 
 .logo img {
-    width: 50px; /* Määrab logo laiuseks 50 pikslit */
+    width: 55px; /* Määrab logo laiuseks 50 pikslit */
 }
 
 /* Lisasin padding, et midagi ei saaks minna navbari taha peitu */
@@ -86,13 +86,13 @@ section {
 .project {
     background-color: #f2f2f2; /* taustavärv */
     padding: 20px; /* Lisab sisu ümber ruumi */
-    border-radius: 13px; /* Ümarad servad */
-    box-shadow: 0 0 3px #333; /* Lisab kerge varju efekti */
+    border-radius: 8px; /* Ümarad servad */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Lisab kerge varju efekti */
 }
 
 .project-section {
     padding: 80px 20px;
-    max-width: 1200px;
+    max-width: 800px;
     margin: auto;
     text-align: left;
     display: grid; /* Kasutab grid-layout’i projektide paigutamiseks */
@@ -104,15 +104,8 @@ section {
 /* Pealkirjad suuremaks */
 .project-section h2 {
     font-size: 36px;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-/* Kirjeldus tekst paigutab ilusti */
-.project-section p {
-    font-size: 18px;
-    color: #666;
     margin-bottom: 20px;
+    position: relative;
 }
 
 /* YouTube videote konteiner */
@@ -127,11 +120,6 @@ section {
     height: 315px;
     border-radius: 8px; /* Ümarad servad */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0,2);
-}
-
-/* Peidetud elemendid */
-.hidden {
-    display: none; /* Peidab elemendid, kuni need muutuvad nähtavaks */
 }
 
 /* Jaluse stiil */
