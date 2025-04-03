@@ -84,42 +84,81 @@ section {
 }
 
 .project {
-    background-color: #f2f2f2; /* taustavärv */
-    padding: 20px; /* Lisab sisu ümber ruumi */
-    border-radius: 8px; /* Ümarad servad */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Lisab kerge varju efekti */
-}
-
-.project-section {
-    padding: 80px 20px;
-    max-width: 800px;
-    margin: auto;
-    text-align: left;
-    display: grid; /* Kasutab grid-layout’i projektide paigutamiseks */
-    grid-template-columns: repeat(auto-fit, minmax(400px, 3fr)); /* Kohandab veerge vastavalt ekraani suurusele */
-    gap: 15px; /* Lisab vahe elementide vahele */
+    background-color: #f2f2f2;
     padding: 20px;
+    border-radius: 13px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Pealkirjad suuremaks */
-.project-section h2 {
+/* Pealkirjad front */
+.project-section-front h2 {
     font-size: 36px;
-    margin-bottom: 20px;
+    font-weight: bolder;
     position: relative;
 }
 
+.project-section-front {
+    padding: 60px 10px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+}
+
+/* Pealkirjad film */
+.project-section-film h2 {
+    font-size: 36px;
+    position: relative;
+}
+
+.project-section-film {
+    padding: 60px 10px;
+    margin: auto;
+    display: block;
+    gap: 10px;
+}
+
+
 /* YouTube videote konteiner */
 .video-container {
-    margin-top: 20px;
-    text-align: center;
+    margin-top: 10px;
+    text-align: auto;
 }
 
 .video-container iframe {
     width: 100%;
     max-width: 560px;
     height: 315px;
-    border-radius: 8px; /* Ümarad servad */
+    border-radius: 12px; /* Ümarad servad */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0,2);
+}
+
+/* Pealkirjad costumes */
+.project-section-costumes h2 {
+    font-size: 36px;
+    position: relative;
+}
+
+.project-section-costumes {
+    padding: 60px 10px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+}
+
+/* Pealkirjad makeup */
+.project-section-makeup h2 {
+    font-size: 36px;
+    position: relative;
+}
+
+.project-section-makeup {
+    padding: 60px 10px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
 }
 
 /* Jaluse stiil */
@@ -128,41 +167,4 @@ footer {
     padding: 20px; /* Lisab ruumi */
     background-color: #333; /* taustavärv */
     color: #f2f2f2; /* värv */
-}
-
-/* Väiksemate ekraanide jaoks (nt telefonid alla 768px laiusega) */
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column; /* Paneb logo ja menüü üksteise alla */
-        text-align: center;
-        padding: 10px;
-    }
-
-    nav ul {
-        flex-direction: column; /* Muudab menüü vertikaalseks */
-        text-align: center;
-        padding: 0;
-    }
-
-    nav ul li {
-        margin: 10px 0; /* Suurem vahe menüüpunktide vahel */
-    }
-
-    #about {
-        max-width: 90%; /* Kitsendab About Us osa */
-        margin: 30px auto; /* Keskendab teksti */
-        text-align: center; /* Joondab keskele */
-    }
-
-    #about h2 {
-        font-size: 36px; /* Vähendab pealkirja suurust */
-    }
-
-    #about h2::after {
-        width: 60%; /* Teeb joone lühemaks väiksematel ekraanidel */
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr; /* Paneb projektid ühte veergu */
-    }
 }
