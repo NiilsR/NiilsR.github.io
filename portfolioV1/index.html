@@ -1,33 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3A leht</title>
-    <link rel="icon" href="3A.png">
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3A Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <!-- Uus lisa tekst mis annab teada külalisele millega on tegu -->
-         <div class="intro-text">
-            <h1>Tere, siin on meie portfoolio leht jne</h1>
-            <p>Test</p>
-         </div>
-        <div class="clickable text top" onclick="redirectTo('film.html')">Film</div>
-        <div class="clickable text left" onclick="redirectTo('veebidisain.html')">Veebidisain</div>
+  <header class="hero">
+    <div class="nav-logo-wrapper">
+      <div class="nav-item top"><a href="#about">About Us</a></div>
+      <div class="nav-item right"><a href="#frontend">Frontend</a></div>
+      <div class="logo">
+        <img src="3A.png" alt="3A Logo" />
+      </div>
+      <div class="nav-item bottom"><a href="#film">Film</a></div>
+      <div class="nav-item left"><a href="#costumes">Costumes</a></div>
+    </div>
+  </header>
 
-        <div class="logo">
-            <img src="3A.png" alt="3A Logo">
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae non exercitationem eveniet beatae error architecto, tempora assumenda commodi quam quidem cupiditate inventore reprehenderit placeat repellendus alias dolor porro! Reprehenderit, iusto?</p>
+    </section>
+
+    <section id="frontend" class="project-section-front">
+        <h2>Frontend Development</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, amet!</p>
+        <div class="project">
+            <h3>Projekt 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione maiores aperiam recusandae iure reprehenderit.</p>
         </div>
+        <div class="project">
+            <h3>Projekt 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione maiores aperiam recusandae iure reprehenderit.</p>
+        </div>
+    </section>
 
-        <div class="clickable text right" onclick="redirectTo('kostuum.html')">Kostüüm</div>
-        <div class="clickable text bottom" onclick="redirectTo('jumestus.html')">Jumestus</div>
-    </div>
-    <script src="script.js"></script>
-    </div>
-     <script src="script.js"></script>
+    <section id="film" class="project-section-film">
+        <h2>Film</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus odio nesciunt nisi accusantium? Incidunt iste magni doloremque odit. Beatae, a!</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7Kz0ksfw2Zc?si=sx4g4BKPA09myjxP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xDTNjhhJRiA?si=XUZ4JSlAfX-P_cCn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NTqLGQJLobY?si=hvNoER0rwL2fl7l2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/P84tdnERSYs?si=co7FVJ2pe2nOENcq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="costume">
+        <h2>Costumes</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, veritatis!</p>
+    </section>
+
+    <section id="makeup">
+        <h2>Makeup</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, veritatis!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 3A</p>
+</footer>
+
 </body>
 </html>

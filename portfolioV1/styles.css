@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.nav-logo-wrapper {
+  position: relative;
+  width: 30vw;
+  max-width: 200px;
+  aspect-ratio: 1 / 1;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.nav-item {
+  position: absolute;
+  font-size: 1.2vw;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.nav-item a {
+  color: #111;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: #fff;
+}
+
+.nav-item.top {
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+}
+
+.nav-item.right {
+  right: -45%;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  font-size: 30px;
+}
+
+.nav-item.bottom {
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+}
+
+.nav-item.left {
+  left: -55%;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  font-size: 30px;
+}
+
+main {
+  padding: 4rem 2rem;
+}
+
+section {
+  padding: 4rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+footer {
+  text-align: center; /* Joondab teksti keskele */
+  padding: 10px; /* Lisab ruumi */
+  color: #aaa7a7; /* värv */
+}
+
+/* YouTube videote konteiner */
+.video-container {
+  margin-top: 10px;
+  text-align: auto;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border-radius: 12px; /* Ümarad servad */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0,2);
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 40vw;
+    max-width: 150px;
+  }
+
+  .nav-item.top {
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+  }
+  
+  .nav-item.right {
+    right: -80%;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    font-size: 25px;
+  }
+  
+  .nav-item.bottom {
+    bottom: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+  }
+  
+  .nav-item.left {
+    left: -90%;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    font-size: 25px;
+  }
+}
